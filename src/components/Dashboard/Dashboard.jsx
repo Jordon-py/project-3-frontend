@@ -5,6 +5,7 @@ import { useEffect, useContext } from 'react';
 import { UserContext } from '../../contexts/UserContext';
 
 import * as userService from '../../services/userService';
+import { Link } from 'react-router';
 
 
 
@@ -42,12 +43,12 @@ function Dashboard () {
       
       {/*Buttons */}
       <div className="button-container">
-          <a href="/posts/new">
+          <Link to="/posts/new">
             <button className="Login" type="button">Create New Post</button>
-          </a>
-          <a href="/posts">
-          <button className="Register" type="button">Post List</button>
-          </a>
+          </Link>
+          <Link to="/posts">
+            <button className="Register" type="button">Post List</button>
+          </Link>
       </div>
 
       
